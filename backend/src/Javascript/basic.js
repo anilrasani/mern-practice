@@ -1,9 +1,12 @@
 
 const express = require("express");
+import sqr from './basics.js'
 
 const app = express();
 
 app.use(express.json());
+
+sqr.arguments('anil',25,'TPT')
 
 // Basic employee data
 const employees = [
