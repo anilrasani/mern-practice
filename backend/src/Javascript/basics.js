@@ -152,4 +152,93 @@ const dta = [
     (m)=>m
  )
  console.log(d2);
- 
+
+ // -- revision
+
+function greet1 (msg){
+    console.log(`Hello  ${msg}`);
+
+}
+greet1('Anil')
+
+const add2 = (a,b)=>{
+
+    console.log(a+b);
+    
+}
+add2(12,12);
+
+const data1 = [2,4,6,8,10]
+
+const doub = data1.map(
+    (n) =>n*2
+)
+
+console.log(doub);
+
+
+//  filter -return filter based results
+
+
+console.log(nums);
+console.log(d);
+
+const f = d.filter(
+    (n)=> n>500
+)
+
+console.log(f);
+
+//ip :[ 3, 436, 9123456780, 43643, 564 ]
+//op: [ 9123456780, 43643, 564 ]
+
+let ages = [12,35,16,9,25,87,32,42,76,20]
+
+const t=ages.filter(
+    (a)=> a >= 18 
+)
+console.log(t);
+
+
+let animals = ['cat','wolf','dogs','Bear','Elephant','Lion']
+
+const mal = animals.filter(
+    (a)=> a.length>4
+)
+
+console.log(mal);
+
+
+// reduce - reduce array elements into a single value
+
+//const data1 = [2,4,6,8,10]
+
+const s1 = data1.reduce(
+   (acc,n)=>acc+n,0)
+
+console.log(s1);
+
+//let ages = [12,35,16,9,25,87,32,42,76,20]
+
+const s2 = ages.reduce(
+    (acc,n)=>acc+n
+,0)
+
+console.log(s2);
+
+
+const s3 = data1.reduce(
+    (ac,n)=>ac*n
+,1)
+
+console.log(s3);
+
+// ops :
+// 30
+// 354
+// 3840
+
+
+const s4 = data1.reduce((ac, n) => (n > ac ? n : ac), 0);
+console.log(s4);
+
