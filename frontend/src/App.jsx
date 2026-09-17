@@ -1,7 +1,17 @@
 
+import { useState } from 'react';
 import './App.css'
 
-function App() {
+
+
+const App = ()=> {
+
+    const[counter,setCounter]=useState(0);
+
+    function IncreaseCounter(){
+        setCounter(counter+1);
+    }
+    
     return (
         <div>
             <h2>Employee App</h2>
@@ -36,9 +46,13 @@ function App() {
                     Save Employee
                 </button>
             </form>
+            <h1>Count :{counter}</h1>
+            <button onClick={IncreaseCounter}>Increase</button>
         </div>
+        
     );
 }
 
 
 export default App
+
