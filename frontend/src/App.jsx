@@ -3,6 +3,7 @@
 import './App.css';
 import './main.jsx'
 import  Greet  from './Greet.jsx';
+import Form from './formHandling.jsx';
 
 import Cbox from './tableCheckbox.jsx';
 
@@ -16,8 +17,10 @@ const people =[
 const App = () => (
 
 <div className="App">
+      <Form data ={people}/>
+
     {/* <Greet name={'anil rasani'} /> */}
-    <Greet name='anil rasani' people={people} />
+    {/* <Greet name='anil rasani' people={people} /> */}
 
     {/*<Greet name = 'Anil Rasani 2' />
     <Greet name = 'Anil Rasani 3' />
