@@ -1,11 +1,9 @@
-// App.jsx
 
-import './App.css';
-import './main.jsx'
-import  Greet  from './Greet.jsx';
-import Form from './formHandling.jsx';
+import  Greet  from './components/Greet.jsx';
+// import Form from './components/formHandling.jsx';
+import Cbox from './components/tableCheckbox.jsx';
+import StateComponent from './components/StateCmponent.jsx';
 
-import Cbox from './tableCheckbox.jsx';
 
 const people =[
     { id:1,name:'anil',age:25,skill:'React'},
@@ -17,16 +15,16 @@ const people =[
 const App = () => (
 
 <div className="App">
-      <Form data ={people}/>
+      {/* <Form data ={people}/> */}
 
     {/* <Greet name={'anil rasani'} /> */}
     {/* <Greet name='anil rasani' people={people} /> */}
+    
+     {/* <Greet name = 'Anil Rasani 2' />    */}
+    {/* <Greet name = 'Anil Rasani 3' /> */}
+    {/* <Cbox name = 'check box'/>  */}
 
-    {/*<Greet name = 'Anil Rasani 2' />
-    <Greet name = 'Anil Rasani 3' />
-    <Cbox name = 'check box'/> */}
-
-
+    <StateComponent/>
   </div>
 );
 

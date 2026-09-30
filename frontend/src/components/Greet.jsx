@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./main.jsx"
-
 
 const Greet= (props)=>{
     const {name,people} = props;
