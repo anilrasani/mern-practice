@@ -2,7 +2,7 @@
 import  Greet  from './components/Greet.jsx';
 // import Form from './components/formHandling.jsx';
 import Cbox from './components/tableCheckbox.jsx';
-import StateComponent from './components/StateCmponent.jsx';
+import StateComponent from './components/stateComponent.jsx';
 
 
 const people =[
