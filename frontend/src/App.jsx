@@ -4,6 +4,8 @@ import  Greet  from './components/Greet.jsx';
 import Cbox from './components/tableCheckbox.jsx';
 import StateComponent from './components/stateComponent.jsx';
 
+import EmployeeForm from './components/EmployeeForm.jsx';
+
 
 const people =[
     { id:1,name:'anil',age:25,skill:'React'},
@@ -24,7 +26,9 @@ const App = () => (
     {/* <Greet name = 'Anil Rasani 3' /> */}
     {/* <Cbox name = 'check box'/>  */}
 
-    <StateComponent/>
+    {/* <StateComponent/> */}
+    <EmployeeForm/>
+
   </div>
 );
 
