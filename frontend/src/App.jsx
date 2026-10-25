@@ -6,6 +6,7 @@ import StateComponent from './components/stateComponent.jsx';
 
 import EmployeeForm from './components/EmployeeForm.jsx';
 import BasicUsagezod from './components/basicUsageZod.jsx';
+import LoginForm from './components/LoginForm.jsx';
 
 
 const people =[
@@ -30,7 +31,9 @@ const App = () => (
     {/* <StateComponent/> */}
     {/* <EmployeeForm/> */}
 
-    <BasicUsagezod/>
+    {/* <BasicUsagezod/> */}
+
+    <LoginForm/>
 
 
   </div>
