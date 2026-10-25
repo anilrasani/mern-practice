@@ -5,6 +5,7 @@ import Cbox from './components/tableCheckbox.jsx';
 import StateComponent from './components/stateComponent.jsx';
 
 import EmployeeForm from './components/EmployeeForm.jsx';
+import BasicUsagezod from './components/basicUsageZod.jsx';
 
 
 const people =[
@@ -27,7 +28,10 @@ const App = () => (
     {/* <Cbox name = 'check box'/>  */}
 
     {/* <StateComponent/> */}
-    <EmployeeForm/>
+    {/* <EmployeeForm/> */}
+
+    <BasicUsagezod/>
+
 
   </div>
 );

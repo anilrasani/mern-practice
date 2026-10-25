@@ -34,6 +34,7 @@ useEffect(()=>{
                 <h2>Instagram Post</h2>
 
                 <>
+                {/* Likes count */}
                 <h1>New post  </h1>
                 <button onClick={()=>{setCount(count+1)}}>Likes : {count}</button>  <></>
                 <button onClick={()=>{setCount(count-1)}}>DisLikes </button>
