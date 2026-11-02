@@ -3,21 +3,21 @@ import z from "zod";
 
 const Loginform = z.object({
     Username :z.string().min(4),
-    Age:z.number.min(1),
+    Age:z.number().min(1),
     Sport:z.string(),
 });
 
-const user = {
-    Username:{setUsername},
-    Age:{setAge},
-    Sport : {setSport},
-}
+// const user = {
+//     Username:{setUsername},
+//     Age:{setAge},
+//     Sport : {setSport},
+// }
 
-const data = Loginform.safeParse(user);
+// const data = Loginform.safeParse(user);
 
-console.log(data.Username);
-console.log(data.Age);
-console.log(data.Sport);
+// console.log(data.Username);
+// console.log(data.Age);
+// console.log(data.Sport);
 
 function LoginForm(){
     
@@ -39,15 +39,13 @@ function LoginForm(){
                     }
                     }
                     />
-                
-
-                
+            
                     <label> Age  : </label>
                     <input type = 'number'
                     value={Age}
                     onChange={
                         (e)=>{
-                            setAge(e.target.value);
+                            // setAge(e.target.value);
                             console.log(e.target.value);
                             
                         }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form=(props)=>{
+const Form=(props:any)=>{
     const {data}=props;
     const [username,setUsername] = useState('');
     return(

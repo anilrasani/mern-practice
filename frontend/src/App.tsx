@@ -1,12 +1,14 @@
 
 import  Greet  from './components/Greet.jsx';
-// import Form from './components/formHandling.jsx';
+// import Form from './components/formHandling.tsx';
 import Cbox from './components/tableCheckbox.jsx';
 import StateComponent from './components/stateComponent.jsx';
 
 import EmployeeForm from './components/EmployeeForm.jsx';
 import BasicUsagezod from './components/basicUsageZod.jsx';
-import LoginForm from './components/LoginForm.jsx';
+import LoginForm from './components/LoginForm.tsx';
+
+import RHF from './components/RHF.tsx'
 
 
 const people =[
@@ -33,8 +35,10 @@ const App = () => (
 
     {/* <BasicUsagezod/> */}
 
+
     <LoginForm/>
 
+    <RHF/>
 
   </div>
 );
